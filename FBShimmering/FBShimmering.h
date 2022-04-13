@@ -37,9 +37,6 @@ typedef NS_ENUM(NSInteger, FBShimmerDirection) {
 //! @abstract The highlight length of shimmering. Range of [0,1], defaults to 0.33.
 @property (assign, nonatomic, readwrite) CGFloat shimmeringHighlightLength;
 
-//! @abstract @deprecated Same as "shimmeringHighlightLength", just for downward compatibility
-@property (assign, nonatomic, readwrite, getter = shimmeringHighlightLength, setter = setShimmeringHighlightLength:) CGFloat shimmeringHighlightWidth;
-
 //! @abstract The direction of shimmering animation. Defaults to FBShimmerDirectionRight.
 @property (assign, nonatomic, readwrite) FBShimmerDirection shimmeringDirection;
 
